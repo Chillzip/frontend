@@ -1,0 +1,136 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e0d4fc, #d6eaff); /* light purple to blue */
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Header */
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Alert Styles */
+.alert {
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  display: none;
+}
+
+.alert.success {
+  background-color: #d1f5e4;
+  color: #176d3a;
+}
+
+.alert.error {
+  background-color: #fddede;
+  color: #9b1c1c;
+}
+
+.alert:not(.hidden) {
+  display: block;
+}
+
+/* Auth Section Layout */
+.auth-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Form Cards */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Form Inputs */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #444;
+}
+
+form input {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 0.75rem;
+background: linear-gradient(135deg, #fbc2eb, #a18cd1);; /* soft blue to lilac */
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #7f8bff, #b78fff);
+}
+
+/* Hidden Class */
+.hidden {
+  display: none !important;
+}
+
+/* Dashboard Placeholder */
+#dashboard {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  color: #333;
+}
